@@ -1,8 +1,21 @@
+// Constructor
+class books {
+    constructor({
+        title,
+        author,
+    }){
+        this.title = title; //Título del libro
+        this.author= author;// Autor del libro
+    }
+}
 // Datos de ejemplo (puedes reemplazarlos con tus propios datos)
 const books = [
-    { title: "Book 1", author: "Author 1" },
-    { title: "Book 2", author: "Author 2" },
-    { title: "Book 3", author: "Author 3" },
+    { title: "El problema final", author: "PÉREZ-REVERTE, ARTURO" },
+    { title: "Bocabesada", author: "VAL, JUAN DEL" },
+    { title: "No te veré morir", author: "MUÑOZ MOLINA, ANTONIO" },
+    { title: "Los inocentes", author: "ORUÑA, MARÍA" },
+    { title: "Invisible", author: "MORENO, ELOY" },
+    { title: "Hábitos atómicos ", author: "CLEAR, JAMES" },
     // Agrega más libros aquí
 ];
 
