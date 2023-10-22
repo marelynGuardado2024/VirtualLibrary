@@ -1,5 +1,5 @@
 // Constructor
-class books {
+class bookss {
     constructor({
         title,
         author,
@@ -10,12 +10,20 @@ class books {
 }
 // Datos de ejemplo (puedes reemplazarlos con tus propios datos)
 const books = [
-    { title: "El problema final", author: "PÉREZ-REVERTE, ARTURO" },
-    { title: "Bocabesada", author: "VAL, JUAN DEL" },
-    { title: "No te veré morir", author: "MUÑOZ MOLINA, ANTONIO" },
-    { title: "Los inocentes", author: "ORUÑA, MARÍA" },
-    { title: "Invisible", author: "MORENO, ELOY" },
-    { title: "Hábitos atómicos ", author: "CLEAR, JAMES" },
+    { title: "El poder de confiar en ti", author: "Curro Cañete" },
+    { title: "El poder de confiar en ti", author: "Curro Cañete" },
+    { title: "Un cuento perfecto", author: "Elísabet Benavent" },
+    { title: "Matar a un Ruíseñor", author: "Vicente Molina" },
+    { title: "El chico que bajó de las estrellas", author: "José Sahady Alargon" },
+    { title: "Amigo imaginario", author: "Stephen Chbosky" },
+    { title: "El viento conoce mi nombre ", author: "Isabel Allende" },
+    { title: "La magia del orden ", author: "Marie Kondo" },
+    { title: "El arte de perderse ", author: "Rebeca Solnit" },
+    { title: "Reina roja", author: "Juan Gómez-Jurado" },
+    { title: "Tu también flotarás", author: "Stephen King" },
+    { title: "Coraline", author: "Neil Gaiman " },
+    { title: "La cabaña", author: "Natasha Preston" },
+    { title: "El instituto", author: "Stephen king" },
     // Agrega más libros aquí
 ];
 
