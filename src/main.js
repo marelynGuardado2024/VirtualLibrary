@@ -43,6 +43,13 @@ function displaySearchResults(results) {
         bookList.appendChild(li);
     });
 }
+//Función cuando aprete el boton de carrito
+const boton= document.getElementById("carrito");
+boton.addEventListener('click', function() {
+   // cuando se haga click
+   alert("Listo ✅");
+});
+
 
 // Función para realizar la búsqueda
 function searchBooks() {
