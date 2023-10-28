@@ -10,7 +10,7 @@ class bookss {
 }
 // Datos de ejemplo (puedes reemplazarlos con tus propios datos)
 const books = [
-    { title: "El poder de confiar en ti", author: "Curro Cañete" },
+    { title: "La sombra del viento", author: "Carlos Ruiz" },
     { title: "El poder de confiar en ti", author: "Curro Cañete" },
     { title: "Un cuento perfecto", author: "Elísabet Benavent" },
     { title: "Matar a un Ruíseñor", author: "Vicente Molina" },
@@ -44,11 +44,18 @@ function displaySearchResults(results) {
     });
 }
 //Función cuando aprete el boton de carrito
-const boton= document.getElementById("carrito");
-boton.addEventListener('click', function() {
+/* const boton= document.getElementById("carrito");
+boton.addEventListener("click", function() {
    // cuando se haga click
-   alert("Listo ✅");
+   alert("Agregado ✅");
 });
+ */
+function add() {
+    Swal.fire({
+        icon: 'success',
+        title: 'Producto añadido',
+      })
+}
 
 
 // Función para realizar la búsqueda
