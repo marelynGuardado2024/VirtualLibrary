@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -191,10 +191,6 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
-  font-feature-settings: inherit;
-  /* 1 */
-  font-variation-settings: inherit;
-  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -342,14 +338,6 @@ ul,
 menu {
   list-style: none;
   margin: 0;
-  padding: 0;
-}
-
-/*
-Reset default styling for dialogs.
-*/
-
-dialog {
   padding: 0;
 }
 
@@ -546,8 +534,36 @@ video {
   margin-top: 1rem;
 }
 
-.list-disc {
-  list-style-type: disc;
+.flex {
+  display: flex;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+}
+
+.list-none {
+  list-style-type: none;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.justify-self-auto {
+  justify-self: auto;
 }
 
 .rounded-lg {
@@ -586,9 +602,8 @@ video {
   padding-left: 1rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .text-2xl {
@@ -596,17 +611,14 @@ video {
   line-height: 2rem;
 }
 
-.font-bold {
-  font-weight: 700;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.underline {
-  text-decoration-line: underline;
 }
 
 .filter {
