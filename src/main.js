@@ -3,29 +3,29 @@ class bookss {
     constructor({
         title,
         author,
-        isborrow,
+        taken,
     }){
         this.title = title; //Título del libro
         this.author= author;// Autor del libro
-        this.isborrow= false;//prestado el libro
+        this.isBorrowed= false;//prestado el libro
     }
 }
 // Datos de ejemplo (puedes reemplazarlos con tus propios datos)
 const books = [
-    { title: "El poder de confiar en ti", author: "Curro Cañete", taken:false },
-    { title: "El poder de confiar en ti", author: "Curro Cañete", taken:true},
-    { title: "Un cuento perfecto", author: "Elísabet Benavent" , taken:false },
-    { title: "Matar a un Ruíseñor", author: "Vicente Molina", taken:false },
-    { title: "El chico que bajó de las estrellas", author: "José Sahady Alargon", taken:true },
-    { title: "Amigo imaginario", author: "Stephen Chbosky", taken:false },
-    { title: "El viento conoce mi nombre ", author: "Isabel Allende", taken:true },
-    { title: "La magia del orden ", author: "Marie Kondo", taken:false },
-    { title: "El arte de perderse ", author: "Rebeca Solnit", taken:true },
-    { title: "Reina roja", author: "Juan Gómez-Jurado", taken:false },
-    { title: "Tu también flotarás", author: "Stephen King", taken:true },
-    { title: "Coraline", author: "Neil Gaiman ", taken:false },
-    { title: "La cabaña", author: "Natasha Preston", taken:false },
-    { title: "El instituto", author: "Stephen king", taken:false },
+    { title: "El poder de confiar en ti", author: "Curro Cañete"},
+    { title: "El poder de confiar en ti", author: "Curro Cañete"},
+    { title: "Un cuento perfecto", author: "Elísabet Benavent"  },
+    { title: "Matar a un Ruíseñor", author: "Vicente Molina"},
+    { title: "El chico que bajó de las estrellas", author: "José Sahady Alargon"},
+    { title: "Amigo imaginario", author: "Stephen Chbosky" },
+    { title: "El viento conoce mi nombre ", author: "Isabel Allende" },
+    { title: "La magia del orden ", author: "Marie Kondo" },
+    { title: "El arte de perderse ", author: "Rebeca Solnit" },
+    { title: "Reina roja", author: "Juan Gómez-Jurado" },
+    { title: "Tu también flotarás", author: "Stephen King"},
+    { title: "Coraline", author: "Neil Gaiman " },
+    { title: "La cabaña", author: "Natasha Preston"},
+    { title: "El instituto", author: "Stephen king"},
     // Agrega más libros aquí
 ];
  
@@ -46,21 +46,18 @@ function displaySearchResults(results) {
     });
 }
  
-function borrow() {
-    if (!this.isborrow) {
-        this.isborrow= true;
+function Borriwed() {
+    if (!this.isBorrowed) {
+        this.isBorrowed= true;
         alert("Borrowed Book");
-        }
     }
-   
-function returnBook () {
-    if (this.isborrow) {
-        this.isborrow= false;
-        alert("returns Book");
-        
-    }
+
+function returnsBook () {
+    if (this.isBorrowed) {
+        this.isBorrowedn= false;
+        alert("return Book");
+    
 }  
- 
  
 // Función para realizar la búsqueda
 function searchBooks() {
