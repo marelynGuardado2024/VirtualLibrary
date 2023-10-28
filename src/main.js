@@ -3,27 +3,29 @@ class bookss {
     constructor({
         title,
         author,
-        taken,
+        isBorrowed,
+        isReturn,
     }){
         this.title = title; //Título del libro
         this.author= author;// Autor del libro
         this.isBorrowed= false;//prestado el libro
+        this.isReturn= false;//devuelto el libro
     }
 }
 // Datos de ejemplo (puedes reemplazarlos con tus propios datos)
 const books = [
+    { title: "La sombra del viento", author: "Carlos Ruiz"},
     { title: "El poder de confiar en ti", author: "Curro Cañete"},
-    { title: "El poder de confiar en ti", author: "Curro Cañete"},
-    { title: "Un cuento perfecto", author: "Elísabet Benavent"  },
+    { title: "Un cuento perfecto", author: "Elísabet Benavent" },
     { title: "Matar a un Ruíseñor", author: "Vicente Molina"},
     { title: "El chico que bajó de las estrellas", author: "José Sahady Alargon"},
-    { title: "Amigo imaginario", author: "Stephen Chbosky" },
-    { title: "El viento conoce mi nombre ", author: "Isabel Allende" },
-    { title: "La magia del orden ", author: "Marie Kondo" },
+    { title: "Amigo imaginario", author: "Stephen Chbosky"},
+    { title: "El viento conoce mi nombre ", author: "Isabel Allende"},
+    { title: "La magia del orden ", author: "Marie Kondo"},
     { title: "El arte de perderse ", author: "Rebeca Solnit" },
-    { title: "Reina roja", author: "Juan Gómez-Jurado" },
+    { title: "Reina roja", author: "Juan Gómez-Jurado"},
     { title: "Tu también flotarás", author: "Stephen King"},
-    { title: "Coraline", author: "Neil Gaiman " },
+    { title: "Coraline", author: "Neil Gaiman "},
     { title: "La cabaña", author: "Natasha Preston"},
     { title: "El instituto", author: "Stephen king"},
     // Agrega más libros aquí
@@ -46,19 +48,20 @@ function displaySearchResults(results) {
     });
 }
  
-function Borriwed() {
+function borrowed() {
     if (!this.isBorrowed) {
-        this.isBorrowed= true;
-        alert("Borrowed Book");
+        this.isBorrowed=false;
+        Swal.fire("alert", "Borrowed Book","success");
     }
+}
 
-function returnsBook () {
-    if (this.isBorrowed) {
-        this.isBorrowedn= false;
-        alert("return Book");
-    
-}  
- 
+function returnbook() {
+    if (!this.isReturn) {
+        this.isReturn=false;
+        Swal.fire("Alert","Return Book", "info");
+    }
+}
+
 // Función para realizar la búsqueda
 function searchBooks() {
     const searchTerm = searchInput.value.toLowerCase();
